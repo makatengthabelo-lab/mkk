@@ -1,0 +1,223 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
+    color: #333;
+}
+
+/* NAVBAR */
+header {
+    background-color: #0a3d62;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+}
+
+.logo:hover {
+    color: #f1c40f;
+    cursor: pointer;
+}
+
+/* NAV LINKS */
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT (underline animation) */
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #f1c40f;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* SECTIONS */
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* IMAGES */
+img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+img:hover {
+    transform: scale(1.02);
+}
+
+/* PRODUCT GRID */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    width: 300px;
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+/* VIDEO */
+video {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* LISTS */
+ul {
+    padding-left: 20px;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+input {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0a3d62;
+    outline: none;
+    box-shadow: 0 0 5px rgba(10,61,98,0.3);
+}
+
+/* BUTTON */
+button {
+    padding: 12px;
+    background: #0a3d62;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1e5f8a;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0a3d62;
+    color: white;
+    margin-top: 40px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
